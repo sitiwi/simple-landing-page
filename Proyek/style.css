@@ -1,0 +1,440 @@
+*{ 
+    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+} 
+
+body {
+  font-family: 'Roboto', sans-serif;  
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+   background-color: #caf0f8;
+   padding: 5px;
+   /*position: sticky; *//*****NAVIGATION STICKY NOTE *******/
+   position: fixed;
+   width: 100%;
+   top: 0;
+   display: flex;
+   align-items: center;
+   z-index: 30;
+
+
+}
+
+li{
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+   font-size: 18px;
+   color: #03045e;
+}
+
+li:hover{
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+   font-size: 18px;
+  /* color: white;*/
+   font-weight: bold;
+}
+
+.logo{
+   float: left;
+   list-style-type: none;
+   width: 130px;
+}
+
+.companyname {
+   float: left;
+   margin-right: 20px;
+   font-family: 'Sacramento', cursive;
+   font-size: 40px;
+}
+
+.header-list{
+   float: right;
+   width: 70%;
+   text-align: right;
+}
+
+
+section.slider {
+   max-width: auto;
+   height: 600px;
+   position: relative;
+   display: flex;
+   flex-direction: row-reverse;
+   background-image: url(assets/header1.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   align-items: center;
+   margin-top: 0;
+   flex-direction: row-reverse;
+   z-index: 0;
+
+}
+
+.text{
+   padding-right: 30px;
+   font-size: 70px;
+   font-weight: 700;
+   color: white;
+   opacity: 0.8;
+}
+
+.slider1 {
+   color: black;
+   font-size: 2em;
+   text-align: right;
+   position: relative;
+}
+
+.flex-container-column {
+   display: flex;
+   overflow: hidden;
+   flex-direction: column;
+   /*max-width: 1440px;*/
+   margin: 0 auto;
+   text-align: left;
+   padding: 50px;
+}
+
+
+.flex-container-row {
+   display: flex;
+ /*  height: 500px;*/
+   flex-direction: row;
+   /*flex-grow: 2;*/
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+}
+
+article#about {
+    float: left;
+    width: 50%;
+}
+
+article#about h2{
+   font-size: 40px;
+   font-weight: 600;
+   padding-top: 30px;
+   padding-bottom: 20px;
+}
+
+img .gambar1 {
+    width: 200px;
+}
+
+article#about p {
+   text-align: justify;
+   line-height: 2;
+   font-size: 20px;
+   padding-bottom: 35px;
+}
+
+.btn {
+    background-color: #03045e;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+ }
+
+.btn:hover {
+    background-color: #caf0f8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: black;
+    font-weight: bold;
+    
+ }
+
+.content {
+    display: inline-block;
+    align-items: center;
+    flex: left;
+}
+
+.card{
+   display: flex;
+   flex: 1;
+   text-align: justify;
+   overflow: hidden;
+
+}
+
+.gambar{
+   display: flex;
+   flex: margin-right;
+}
+
+#services{
+   background-color:#caf0f8 ;
+   display: flex;
+}
+
+.services1{
+   flex-basis: 25%;
+   padding: 10px;
+   text-align: center;
+   color: black;
+   font-size: 1.5em;
+    overflow: hidden;
+}
+
+.services1 img{
+   width: 150px;
+   padding: 20px;
+   margin: 30px;
+}
+
+
+.services1 p{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.our-services{
+   text-align: center;
+   font-size: 40px;
+}
+
+.gallery1{
+   padding: 5px;
+   margin: 20px 10px 30px 10px;
+   align-content: center;
+   box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+   border-radius: 10px;
+   background-color: #fff;
+   transition: all 0.3s ease-in-out;
+}
+
+ h2.our-galery,h2.info1{
+   padding: 30px;
+   text-align: center;
+   font-size: 40px;
+}
+
+.gallery1 img{
+   height: 150px;
+   border-radius: 10px;
+}
+
+.gallery1:hover{
+   /* display: block;*/
+    transition: all ease 0.5s;
+}
+
+section.contact{
+/*   background-color:#caf0f8 rgba(0, 0, 0, 0.4);*/
+   background-image: url(assets/phinisi-sunset.jpg);
+   padding-bottom: 50px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   align-items: center;
+
+}
+
+div#contact-us {
+    padding: 0 30px ;
+    line-height: 3;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.card1{
+  flex: 1;
+  max-width: 360px;
+  background-color: #fff;
+  margin: 20px 10px;
+  text-align: center;
+  overflow: hidden;
+  color: #2d2d2d;
+  box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  border-radius: 10px;
+  margin-right: -35px;
+  z-index: 20;
+}
+
+
+h2.info {
+    text-align: center;
+}
+article#send-massage{
+  max-width: 570px;
+  background-color: #fff;
+  box-shadow: 1px 4px 5px #cacaca;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 45px;
+  padding-left: 60px;
+
+}
+
+article#send-massage .text-box{
+  background: #d2d2d2c2;
+  color: black;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+article#send-massage .text-box:first-child{
+  margin-right: 15px;
+}
+
+article#send-massage textarea{
+  background: #d2d2d2c2;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+article#send-massage .send-btn{
+  float: right;
+  background: #2E94E3;
+  color: #fff;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+article#send-massage .send-btn:hover{
+  background: #0582E3;
+}
+
+
+.fa, .fas {
+    font-weight: 900;
+    padding-right: 15px;
+}
+
+aside {
+    justify-content: center;
+    display: flex;
+    margin: 30px 0;
+}
+
+
+img.kecil {
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    box-shadow: 0 9px 26px rgb(58 87 135 / 10%);
+    text-align: center;
+    margin: 70px 0;
+}
+
+th {
+    padding-right: 30px;
+}
+
+section.rincian-biodata {
+    line-height: 3;
+    text-align: left;
+    padding: 35px;
+}
+
+.judul h2{
+   text-align: center;
+}
+article.biodata-penulis.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   padding-left: 40px;
+   max-width: 720px;
+   margin: 10px 10px;
+   text-align: center;
+   overflow: hidden;
+   /*color: #2d2d2d;*/
+   border-radius: 10px;
+   align-content: center;
+
+}
+
+main {
+  /* padding: 20px;*/
+   overflow: auto;
+}
+
+
+footer {
+   padding: 20px;
+   color: white;
+   background-color: #00a2c6;
+   text-align: center;
+   font-weight: bold;
+}
+
+
+@media screen and (max-width: 513px) {
+   .div#about {
+       padding: 0px;
+       margin: 0px;
+      }
+   .section#services {
+       width: 100%;
+       padding: 0px;
+       margin: 0px;
+      }
+   .section.contact {
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+   }
+   article#contact-us{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+   }
+   aside{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+   }
+   article#contact-us, .info{
+      width: 100%;
+      padding: 0px;
+      margin: 0px;
+   }
+}
